@@ -21,7 +21,7 @@ public class CustomWebSocketHandler extends TextWebSocketHandler {
         System.out.println("Connected: " + session.getId());
         sessionsList.add(session);
 
-        // Optional welcome message
+        // Optional welcome message..
         //session.sendMessage(new TextMessage("{\"type\": \"welcome\", \"message\": \"Connected to WebSocket server\"}"));
     }
 
