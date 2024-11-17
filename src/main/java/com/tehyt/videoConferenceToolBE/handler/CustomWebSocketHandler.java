@@ -30,7 +30,7 @@ public class CustomWebSocketHandler extends TextWebSocketHandler {
 
         // Parse incoming message as JSON
         try {
-            // Check if the message is valid JSON
+            // Check if the message is valid JSON...
             var jsonNode = objectMapper.readTree(message.getPayload());
             if (jsonNode.has("type")) {
                 System.out.println("Signaling message type: " + jsonNode.get("type").asText());
